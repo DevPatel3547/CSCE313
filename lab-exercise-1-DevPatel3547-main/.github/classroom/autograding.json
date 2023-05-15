@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Compilation",
+      "setup": "",
+      "run": "echo \"\\nStart Testing\" ; echo \"\\nCompilation Test\\n\" ; make all ; ./buggy ; echo \"PASSED\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Checking Triangle Area",
+      "setup": "make clean",
+      "run": "echo \"\\nTriangle Area Test\\n\" ; make all ; ./buggy",
+      "input": "",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Checking Quadrilateral Area",
+      "setup": "make clean",
+      "run": "echo \"\\nQuadrilateral Area Test\\n\" ; make all ; ./buggy",
+      "input": "",
+      "output": "4",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Testing for Memory Leaks",
+      "setup": "make clean",
+      "run": "echo \"\\nTesting For Memory Leaks\\n\" ; g++ -fsanitize=address,undefined -o buggy buggy.cpp ; ./buggy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}

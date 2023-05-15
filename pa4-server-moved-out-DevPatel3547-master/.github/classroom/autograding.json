@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Datapoint Transfer Test 1",
+      "setup": "make test >./.gradeFile",
+      "run": "grep \"One\" ./.gradeFile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Datapoint Transfer Test 2",
+      "setup": "",
+      "run": "grep \"Two\" ./.gradeFile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "CSV Transfer Test 1",
+      "setup": "",
+      "run": "grep \"Three\" ./.gradeFile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Binary File Transfer Test 1",
+      "setup": "",
+      "run": "grep \"Four\" ./.gradeFile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Binary File Transfer Test 2",
+      "setup": "",
+      "run": "grep \"Five\" ./.gradeFile",
+      "input": "",
+      "output": "Test Five Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "Ignore This Test. ",
+      "setup": "killall server & killall client",
+      "run": "echo -e \"Finished\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}

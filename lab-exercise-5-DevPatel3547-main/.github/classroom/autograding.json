@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation",
+      "setup": "make test >./.gradeFile",
+      "run": "grep \"One\" ./.gradeFile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 3,
+      "points": null
+    },
+    {
+      "name": "2 Memory Leakage",
+      "setup": "",
+      "run": "grep \"Two\" ./.gradeFile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "3 Output Without Dependencies",
+      "setup": "",
+      "run": "grep \"Three\" ./.gradeFile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 16
+    },
+    {
+      "name": "4 Output With Dependencies",
+      "setup": "",
+      "run": "grep \"Four\" ./.gradeFile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 17
+    },
+    {
+      "name": "5 Use of Timers",
+      "setup": "",
+      "run": "grep \"Five\" ./.gradeFile",
+      "input": "",
+      "output": "Test Five Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 24
+    },
+    {
+      "name": "6 Testing Use Of Signals",
+      "setup": "",
+      "run": "grep \"Six\" ./.gradeFile",
+      "input": "",
+      "output": "Test Six Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 33
+    }
+  ]
+}

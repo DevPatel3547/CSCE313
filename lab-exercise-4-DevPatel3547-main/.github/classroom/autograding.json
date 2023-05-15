@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation Test",
+      "setup": "make test > ./.gradefile",
+      "run": "grep \"One\" .gradefile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "2 Memory Management",
+      "setup": "",
+      "run": "grep \"Two\" .gradefile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3 Scheduling with Jobs Shorter Than Quantums",
+      "setup": "",
+      "run": "grep \"Three\" .gradefile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "4 Scheduling with Jobs Shorter Than Quantums pt 2",
+      "setup": "",
+      "run": "grep \"Four\" .gradefile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "5 Scheduling with Jobs Longer Than Quantums pt 1",
+      "setup": "",
+      "run": "grep \"Five\" .gradefile",
+      "input": "",
+      "output": "Test Five Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "6 Scheduling with Jobs Longer Than Quantums pt 2",
+      "setup": "",
+      "run": "grep \"Six\" .gradefile",
+      "input": "",
+      "output": "Test Six Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "7 Scheduling with NOP",
+      "setup": "",
+      "run": "grep \"Seven\" .gradefile",
+      "input": "grep \"Seven\" .gradefile",
+      "output": "Test Seven Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}

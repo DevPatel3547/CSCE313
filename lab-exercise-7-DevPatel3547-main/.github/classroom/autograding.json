@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation Test",
+      "setup": "make test >./.gradeFile",
+      "run": "grep \"One\" ./.gradeFile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2 Correct Output 1 ",
+      "setup": "",
+      "run": "grep \"Two\" ./.gradeFile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 16
+    },
+    {
+      "name": "3 Correct Output 2",
+      "setup": "",
+      "run": "grep \"Three\" ./.gradeFile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 17
+    },
+    {
+      "name": "4 Use of Threads",
+      "setup": "",
+      "run": "grep \"Four\" ./.gradeFile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 22
+    },
+    {
+      "name": "5 Threads Close Correctly",
+      "setup": "",
+      "run": "grep \"Five\" ./.gradeFile",
+      "input": "",
+      "output": "Test Five Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 22
+    },
+    {
+      "name": "6 Testing Memory Leakage",
+      "setup": "",
+      "run": "grep \"Six\" ./.gradeFile",
+      "input": "",
+      "output": "Test Six Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 13
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation",
+      "setup": "make test > ./.gradefile",
+      "run": "grep \"One\" .gradefile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "2 Memory Management",
+      "setup": "",
+      "run": "grep \"Two\" .gradefile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3 Correct Output For Multiple Lines",
+      "setup": "",
+      "run": "grep \"Three\" .gradefile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 25
+    },
+    {
+      "name": "4 Correct Output For 2 Commands",
+      "setup": "",
+      "run": "grep \"Four\" .gradefile",
+      "input": "",
+      "output": "Test Four Passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 25
+    },
+    {
+      "name": "5 Correct Output for 3 or More Commands",
+      "setup": "",
+      "run": "grep \"Five\" .gradefile",
+      "input": "",
+      "output": "Test Five Passed",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 15
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "1 Compilation",
+      "setup": "make test > ./.gradeFile",
+      "run": "grep \"One\" .gradeFile",
+      "input": "",
+      "output": "Test One Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2 Correct Output for Section 1 and 3",
+      "setup": "",
+      "run": "grep \"Two\" .gradeFile",
+      "input": "",
+      "output": "Test Two Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 33
+    },
+    {
+      "name": "3 Testing Use of Threads",
+      "setup": "",
+      "run": "grep \"Three\" .gradeFile",
+      "input": "",
+      "output": "Test Three Passed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 24
+    }
+  ]
+}
